@@ -4,15 +4,18 @@ body {
 	font-family: 'Nunito', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4 {
 	font-family: 'Poppins', sans-serif;
 }
 
+.wrapper {
+	padding: 0 60px;
+}
 
 .header {
 	display: flex;
 	justify-content: space-between;
-	padding: 72px 60px 0;
+	padding-top: 72px;
 }
 
 .header__left {
@@ -56,4 +59,78 @@ h1, h2, h3, h4, h5, h6 {
 	height: 28px;
 	background: url("./assets/search.svg") no-repeat center;
 	float: right;
+}
+
+.highlight {
+	display: flex;
+	margin-top: 172px;
+}
+
+.action {
+	position: relative;
+	flex: 2;
+}
+
+.action__button_view {
+	position: absolute;
+	bottom: 0;
+	display: block;
+	text-align: center;
+	line-height: 110px;
+	font-size: 14px;
+	text-transform: uppercase;
+	width: 100%;
+	background-color: #b4d3d3;
+	color: #ffffff;
+}
+
+.action__button_play {
+	position: absolute;
+	bottom: 0;
+	right: -110px;
+	border: 0;
+	display: block;
+	width: 110px;
+	height: 110px;
+	background-color: #ffffff;
+	background-image: url("./assets/play.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+.main {
+	flex: 7;
+	background-color: #e2e8e8;
+	padding-top: 256px;
+}
+
+.main__name {
+	position: relative;
+	font-size: 101px;
+	margin: 0 0 80px -80px;
+	max-width: 470px;
+	font-weight: 400;
+}
+
+.main__name:after {
+	content: ' ';
+	position: absolute;
+	right: 0;
+	bottom: 20px;
+	width: 64px;
+	height: 10px;
+	background-color: #ffffff;
+}
+
+.main__job_title {
+	font-size: 17px;
+	margin-left: -80px;
+	margin-bottom: 272px;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+
+.pagination {
+	flex: 3;
 }
