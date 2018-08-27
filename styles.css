@@ -12,6 +12,17 @@ h1, h2, h3, h4 {
 	padding: 0 60px;
 }
 
+.jumbotron:after {
+	content: ' ';
+    position: absolute;
+    width: 770px;
+    height: 720px;
+    background: #c1dada;
+    right: 0;
+    top: 0;
+    z-index: -1;
+} 
+
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -101,6 +112,8 @@ h1, h2, h3, h4 {
 
 .main {
 	flex: 7;
+	background-image: url("./assets/georgina.jpg");
+	background-repeat: no-repeat;
 	background-color: #e2e8e8;
 	padding-top: 256px;
 }
@@ -126,11 +139,70 @@ h1, h2, h3, h4 {
 .main__job_title {
 	font-size: 17px;
 	margin-left: -80px;
-	margin-bottom: 272px;
+	margin-bottom: 222px;
 	font-weight: 100;
 	text-transform: uppercase;
 }
 
 .pagination {
 	flex: 3;
+}
+
+.profession__list {
+	display: flex;
+	justify-content: center;
+	font-size: 12px;
+	text-align: center;
+	text-transform: uppercase;
+	list-style: none;
+	margin: 118px 740px 98px 740px;
+}
+
+.Profession__list__item {
+	padding: 10px 20px;
+
+}
+
+.talent__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+}
+
+.exploremore {
+	text-align: center;
+	padding: 62px 0;
+}
+
+.exploremore__button {
+	width: 220px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	border-radius: 30px;
+	border: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	background-color: #b4d3d3;
+	color: #ffffff;
+}
+
+.news {
+	text-align: center;
+}
+
+.news__title {
+	position: relative;
+	padding-bottom: 50px;
+}
+
+.news__title:after {
+	content: ' ';
+	position: absolute;
+	margin: auto;
+	right: 0; bottom: 0; left: 0;
+	width: 156px;
+	height: 1px;
+	background-color: #000000;
 }
