@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito|Poppins');
 
+* {
+	box-sizing: border-box;
+}
 body {
 	font-family: 'Nunito', sans-serif;
+	
 }
 
 h1, h2, h3, h4 {
 	font-family: 'Poppins', sans-serif;
+}
+
+.special__color {
+	color: grey;
 }
 
 .wrapper {
@@ -195,6 +203,8 @@ h1, h2, h3, h4 {
 .news__title {
 	position: relative;
 	padding-bottom: 50px;
+	margin-bottom: 69px;
+	font-size: 60px;
 }
 
 .news__title:after {
@@ -205,4 +215,177 @@ h1, h2, h3, h4 {
 	width: 156px;
 	height: 1px;
 	background-color: #000000;
+}
+
+/*membuat bagian latest news */
+
+.latest__news {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+
+.latest__news__feed {
+	display: flex;
+	font-size: 24px;
+}
+
+.latest__news__feed_image {
+	margin-right: 40px;
+}
+
+/* membuat feed photos pada latest news*/
+.feeds {
+	height: 1042px;
+	padding: 24px;
+}
+.trending {
+	display: inline-block;
+	width: 70%;
+	height: 100%;
+	margin-right: -4px;
+	vertical-align: top;
+}
+.trending__item__up {
+	position: relative;
+	height: 523px;
+	border: 24px solid #ffffff;
+}
+.trending__item__background {
+	display: inline-block;
+	background-color: #cce0e0;
+	vertical-align: top;
+	width: 40%;
+	height: 100%;
+	margin-right: -6px;
+	padding: 199px 89px 60px 62px;
+}
+
+.trending__item__background button {}
+.trending__item__background h3 {
+	font-size: 30px;
+	text-transform: capitalize;
+	color:#ffffff;
+}
+.trending__item__background h5 {
+	font-size: 16px;
+	text-transform: capitalize;
+	color:#ffffff;
+}
+
+.trending__item__background__button {
+	display: inline-block;
+	background: url("./assets/play2.svg") no-repeat;
+	background-size: contain;
+	height: 44px;
+	width: 40px;
+}
+
+.trending__item__image {
+	display: inline-block;
+	background-image: url("./assets/pict1.jpg");
+	background-size: cover;
+	width: 60%;
+	height: 100%;
+	margin-right: -4px;
+
+}
+
+.trending__item__image_button {
+	position: absolute;
+	width:200px;
+	height: 54px;
+	background-color: #ffffff;
+	border: 0;
+	right: 15px;
+	top: 15px;
+	text-transform: uppercase;
+	font-weight: 800px;
+}
+
+.trending__item__down {
+	height: 472px;
+}
+.trending__item__woman {
+	display: inline-block;
+	background-size: cover;
+	vertical-align: top;
+	width: 50%;
+	height: 100%;
+	margin-right: -4px;
+	border: 24px solid #ffffff;
+	
+}
+
+.trending__item__woman img {
+	width: 100%;
+}
+
+.trending__item__man {
+	position: relative;
+	display: inline-block;
+	background-image: url("./assets/pict3.jpg");
+	vertical-align: top;
+	width: 50%;
+	height: 100%;
+	margin-right: -4px;
+	border: 24px solid #ffffff;
+
+}
+
+.trending__item__man_button {
+	position: absolute;
+	width:200px;
+	background: url("./assets/play-circle.png") no-repeat;
+	bottom: 0;
+	height: 90px;
+	border: 0;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: left;
+	font-weight: 600px;
+	padding-left:110px;
+	margin: 15px;
+
+}
+.top_feeds {
+	display: inline-block;
+	width: 30%;
+	height: 100%;
+	margin-right: -4px;
+	vertical-align: top;
+	background-size: cover;
+	border: 24px solid #ffffff;
+}
+
+.brand__closing {
+	height: 236px;
+	margin-top: 166px;
+}
+
+.brand__closing__left {
+	display: inline-block;
+	width: 80%;
+	margin-right: -4px;
+	vertical-align: top;
+	
+}
+
+.brand__closing__right {
+	display: inline-block;
+	width: 20%
+	margin-right: -4px;
+	vertical-align: top;
+	line-height: 36px;
+	text-transform: uppercase;
+	font-weight: 500px;
+}
+
+.brand__closing__right_mailIcon {
+	display: inline-block;
+	background:url("./assets/mailicon.svg") no-repeat;
+	height:24px; 
+	width:24px;
+	margin-left: 30px;
+	vertical-align: middle;
 }

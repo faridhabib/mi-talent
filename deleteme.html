@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+		}
+		.block {
+			width: 400px;
+			height: 200px;
+			margin: 0 auto;
+		}
+
+		.one {
+
+		}
+
+		.two {
+		
+		}
+
+		.inline {
+			width: 100px;
+			height: 150px;
+			line-height: 200px;
+		}
+
+		.inline-block {
+			display: inline-block;
+			vertical-align: top;
+			width: 20%;
+			height: 100%;
+			margin-right: -4px;
+		}
+		.ib-one {
+			width: 80%;
+			overflow: hidden;
+			background: url("./assets/pict1.jpg") no-repeat;
+			background-size: cover;
+		}
+	</style>
+</head>
+<body>
+	 <div class="block one" style="background-color: papayawhip">
+	 	<div  class="inline-block" style="background-color: crimson">Bar!</div>
+		<div class="inline-block ib-one" style="background-color: steelblue">
+			<h3>Lorem ipsum dolor sit amet</h3>
+		</div>
+	</div>
+	<div class="block two" style="background-color: lime">
+		<span class="inline" style="background-color: steelblue">Bar! baz</span>
+		<span  class="inline" style="background-color: crimson">Bar!</span>
+	</div>
+</body>
+</html>
